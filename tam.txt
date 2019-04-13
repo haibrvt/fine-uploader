@@ -1,0 +1,23 @@
+// ==UserScript==
+// @name         New Userscript
+// @namespace    http://tampermonkey.net/
+// @version      0.2
+// @description  try to take over the world!
+// @author       You
+// @match        https://www.facebook.com/pg/Testlive-2219371394785579/*
+// @match        https://www.facebook.com/Testlive-2219371394785579/*
+// @match        https://www.facebook.com/2219371394785579/*
+// @updateURL    file:///C:/tam.txt
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    var link1='https://www.facebook.com/2219371394785579/videos/328593647798872/';
+
+    var numMinutes = 10;
+    window.setTimeout("window.location.replace(link);", numMinutes*60*1000);
+
+
+
+})();
